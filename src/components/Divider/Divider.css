@@ -1,0 +1,9 @@
+.divider {
+    width: 370px;
+    height: 20px;
+  }
+  
+ hr {
+    width: 340px;
+    border: 0.7px solid rgba(205, 205, 205, 1);
+  }
