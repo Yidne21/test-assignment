@@ -35,16 +35,32 @@ input[type="checkbox"] {
 
 
 .checkBox-container input[type="checkbox"]:checked {
-  background: rgba(36, 105, 246, 1);
+  background: #2469F6;
   background-image: url("../../assets/onclick.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .checkBox-container:hover input[type="checkbox"]:checked {
-  background: rgba(80, 135, 248, 1);
+  background: #5087F8;
   background-image: url("../../assets/onclick.png");
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.checkBox-container:active input[type="checkbox"]:checked {
+  background: #2469F6;
+  background-image: url("../../assets/onclick.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#lable {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+}
+
 

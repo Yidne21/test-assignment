@@ -3,9 +3,8 @@ import './Divider.css'
 
 function Divider() {
     return (
-        <div className='divider'>
-            <hr />
-        </div>
+        <hr className="divider-line" />
+
     )
 }
 

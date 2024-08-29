@@ -1,24 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CheckBox.css';
 
-function CheckBox({ label }) {
-    const [isChecked, setIsChecked] = useState(false);
-
-    const handleCheckboxClick = () => {
-        setIsChecked(!isChecked);
-    };
+function CheckBox({ label, checked, onChange }) {
 
     return (
         <div
-            className={`checkBox-container ${isChecked ? 'checked' : ''}`}
-            onClick={handleCheckboxClick}
+            className={`checkBox-container ${checked ? 'checked' : ''}`}
+            onClick={onChange}
         >
-            <label htmlFor={label}>{label}</label>
+            <label htmlFor={label} id='lable'>{label}</label>
             <input
                 type="checkbox"
                 id={label}
-                checked={isChecked}
-                onChange={handleCheckboxClick}
+                checked={checked}
+                onChange={onChange}
             />
         </div>
     );
